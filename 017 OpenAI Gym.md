@@ -43,6 +43,11 @@ $ pip3 install gym[all]
 
 # CartPole 例子
 
+
+[![IMAGE ALT TEXT](https://morvanzhou.github.io/static/results/ML-intro/q5.png)](https://morvanzhou.github.io/static/results/reinforcement-learning/cartpole%20dqn.mp4)
+
+
+
 之前我编写的 maze_env 基本上是按照 gym 环境格式写的, 所以你换成 gym 格式会很简单.
 
 接下来我们对应上面的算法, 来实现主循环. 首先 import 所需模块.
@@ -63,6 +68,7 @@ print(env.observation_space.low)    # 查看 observation 最低取值
 
 于之前使用 tkinter 定义的环境有点不一样, 我们可以不适用 if __name__ == "__main__" 的方式, 下面是一种类似, 却更简单的写法. 之中我们会用到里面的 reward, 但是 env.step() 说提供的 reward 不一定是最有效率的 reward, 我们大可对这些进行修改, 使 DQN 学得更有效率. 你可以自己对比一下不修改 reward 和 按我这样修改, 他们学习过程的不同.
 
+```
 # 定义使用 DQN 的算法
 RL = DeepQNetwork(n_actions=env.action_space.n,
                   n_features=env.observation_space.shape[0],
@@ -111,12 +117,17 @@ for i_episode in range(100):
         total_steps += 1
 # 最后输出 cost 曲线
 RL.plot_cost()
+```
 
 这是更为典型的 RL cost 曲线:
 
 ![img](https://morvanzhou.github.io/static/results/reinforcement-learning/4-4-1.png)
 
 # MountainCar 例子
+
+[![IMAGE ALT TEXT](https://morvanzhou.github.io/static/results/ML-intro/q5.png)](https://morvanzhou.github.io/static/results/reinforcement-learning/mountaincar%20dqn.mp4)
+
+
 
 代码基本和上述代码相同, 就只是在 reward 上动了下手脚.
 
