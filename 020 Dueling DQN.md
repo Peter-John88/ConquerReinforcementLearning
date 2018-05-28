@@ -5,7 +5,13 @@
 
 只要稍稍修改 DQN 中神经网络的结构, 就能大幅提升学习效果, 加速收敛. 这种新方法叫做 Dueling DQN. 用一句话来概括 Dueling DQN 就是. 它将每个动作的 Q 拆分成了 state 的 Value 加上 每个动作的 Advantage.
 
-https://morvanzhou.github.io/static/results/reinforcement-learning/Pendulum%20DQN.mp4
+
+[![IMAGE ALT TEXT](http://n1.itc.cn/img8/wb/recom/2016/12/29/148296200795056770.PNG)](https://morvanzhou.github.io/static/results/reinforcement-learning/Pendulum%20DQN.mp4)
+
+
+
+
+
 
 # Dueling 算法
 
