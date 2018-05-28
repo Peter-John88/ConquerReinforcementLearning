@@ -4,7 +4,7 @@ Deep Q Network 的简称叫 DQN, 是将 Q learning 的优势 和 Neural networks
 
 这次的教程我们还是基于熟悉的 迷宫 环境, 重点在实现 DQN 算法, 之后我们再拿着做好的 DQN 算法去跑其他更有意思的环境.
 
-[![IMAGE ALT TEXT](https://morvanzhou.github.io/static/results/ML-intro/q5.png)](https://morvanzhou.github.io/static/results/reinforcement-learning/maze%20dqn.mp4)
+[![IMAGE ALT TEXT](http://n1.itc.cn/img8/wb/recom/2016/12/29/148296200795056770.PNG)](https://morvanzhou.github.io/static/results/reinforcement-learning/maze%20dqn.mp4)
 
 # 算法
 
